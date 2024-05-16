@@ -1,4 +1,4 @@
-### OSPFv3 Address Families Configuration Lab Solution
+### OSPF Route Filtering Lab Solution
 ```
 !
 R3
