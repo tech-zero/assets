@@ -18,6 +18,7 @@ config t
 router ospfv3 1
  address-family ipv4 unicast
   area 0 filter-list prefix NO-AREA1-NETS in
+ exit-address-family
 end
 !
 
