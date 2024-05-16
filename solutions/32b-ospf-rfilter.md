@@ -1,70 +1,36 @@
 ### OSPF Route Filtering Lab Solution
+Initial checks: 
+
+From R5, verify that you see the two inter-area routes being learned from area 1 192.0.20. and 198.51.100.0.
+
 ```
-!
-R3
-conf t
- router ospfv3 1
-  router-id 3.3.3.3
-   address-family ipv4
-   address-family ipv6
-  exit-address-family
-!
-interface GigabitEthernet 0/1
- ospfv3 1 ipv4 area 1
- ospfv3 1 ipv6 area 1
-exit
-!
-interface GigabitEthernet 0/2
- ospfv3 1 ipv4 area 1
- ospfv3 1 ipv6 area 1
-exit
-!
-R4
-conf t
- router ospfv3 1
-  router-id 4.4.4.4
-   address-family ipv4
-   address-family ipv6
-  exit address-family
-!
-interface GigabitEthernet 0/1
- ospfv3 1 ipv4 area 1
- ospfv3 1 ipv6 area 1
-exit
-!
-interface GigabitEthernet 0/2
- ospfv3 1 ipv4 area 0
- ospfv3 1 ipv6 area 0
-exit
-!
 R5
-conf t
- router ospfv3 1
-  router-id 5.5.5.5
-  address-family ipv4
-   address-family ipv6
-  exit address-family
 !
-interface GigabitEthernet 0/1
- ospfv3 1 ipv6 area 0
- ospfv3 1 ipv4 area 0
-exit
+show ip route
+
+R4
 !
-interface GigabitEthernet 0/2
- ospfv3 1 ipv6 area 0
- ospfv3 1 ipv4 area 0
-exit
+config t
+ ip prefix-list NO-AREA1-NETS seq 10 deny 192.0.2.0/30
+ ip prefix-list NO-AREA1-NETS seq 20 deny 198.51.100.0/30
+ ip prefix-list NO-AREA1-NETS seq 30 permit 0.0.0.0/0 le 32
 !
+router ospfv3 1
+ address-family ipv4 unicast
+  area 0 filter-list prefix NO-AREA1-NETS in
 end
+!
+
 ```
 
 #### Verification Commands
+Final check:
+
+From R5, verify that the two inter-area routes, from before are now being filtered with the installed prefix-list
+
 ```
-!
-R4
-show ospfv3 neighbor
-show ospfv3 interface brief
-show ospfv3 database
+R5
+show ip route
 !
 ```
 
