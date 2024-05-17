@@ -41,4 +41,4 @@ the output is much larger since R4
 has interfaces in both area 0 & area 1.
 ```
 
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/32a-ospfv2/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/Udemy/32a-ospfv2/README.md)
