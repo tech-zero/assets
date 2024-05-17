@@ -1,8 +1,9 @@
 ### VRF Lab Solution
 ```
-COMMON -
+COMMON 
 - Configure ip vrf statements
 - Configure virtual interfaces
+- Configure VRF routing with OSPF
 !
 config t
  ip vrf TENANT-A
