@@ -53,6 +53,9 @@ end
 COMMON
 !
 show ip route vrf TENANT-A
+show ip route vrf TENANT-B
+show ip route vrf TENANT-C
+!
 ```
 
 ◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/Udemy/22-vrf/README.md)
