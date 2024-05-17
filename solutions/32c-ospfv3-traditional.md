@@ -1,35 +1,76 @@
 ### OSPFv3 Traditional Configuration Lab Solution
 
 ```
-R5
+R3
+config t
+ipv6 unicast-routing
+ipv6 cef
 !
-show ip route
+ipv6 router ospf 1
+ router-id 3.3.3.3
+exit
+!
+interface GigabitEthernet 0/1
+ ipv6 ospf 1 area 1
+exit
+!
+interface GigabitEthernet 0/2
+ ipv6 ospf 1 area 1
+exit
+!
 
 R4
+conf t
+ ipv6 unicast-routing
+ ipv6 cef
 !
-config t
- ip prefix-list NO-AREA1-NETS seq 10 deny 192.0.2.0/30
- ip prefix-list NO-AREA1-NETS seq 20 deny 198.51.100.0/30
- ip prefix-list NO-AREA1-NETS seq 30 permit 0.0.0.0/0 le 32
+ipv6 router ospf 1
+ router-id 4.4.4.4
+exit
 !
-router ospfv3 1
- address-family ipv4 unicast
-  area 0 filter-list prefix NO-AREA1-NETS in
- exit-address-family
-end
+interface GigabitEthernet 0/1
+ ipv6 ospf 1 area 1
+exit
+!
+interface GigabitEthernet 0/2
+ ipv6 ospf 1 area 0
+exit
+!
+
+R5
+conf t
+ ipv6 unicast-routing
+ ipv6 cef
+!
+ipv6 router ospf 1
+ router-id 5.5.5.5
+ passive-interface lo0
+exit
+!
+interface GigabitEthernet 0/1
+ ipv6 ospf 1 area 0
+exit
+!
+interface GigabitEthernet 0/2
+ ipv6 ospf 1 area 0
+exit
 !
 
 ```
 
 #### Verification Commands
-Final check:
-
-From R5, verify that the two inter-area routes, from before are now being filtered with the installed prefix-list
 
 ```
-R5
-show ip route
+R3
+show ipv6 ospf inteface brief
+show ipv6 ospf neighbor
+show ipv6 ospf database
 !
+Check out the OSPF link state database
+- Type 1 LSA
+- Type 2 LSA
+- Type 3 LSA (InterArea IA prefix link states)
+
 ```
 
 ◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/32-ospf/3-ospfv3-traditional/README.md)
