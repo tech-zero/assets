@@ -59,7 +59,6 @@ end
 
 #### Verification Commands
 ```
-!
 R4
 show ospfv3 neighbor
 show ospfv3 interface brief
