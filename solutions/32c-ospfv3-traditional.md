@@ -66,7 +66,7 @@ show ipv6 ospf inteface brief
 show ipv6 ospf neighbor
 show ipv6 ospf database
 !
-Check out the OSPF link state database
+From the output of show ipv6 ospf database, verify the OSPF link state advertisements
 - Type 1 LSA
 - Type 2 LSA
 - Type 3 LSA (InterArea IA prefix link states)
