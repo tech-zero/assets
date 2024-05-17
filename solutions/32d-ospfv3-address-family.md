@@ -18,6 +18,7 @@ interface GigabitEthernet 0/2
  ospfv3 1 ipv6 area 1
 exit
 !
+
 R4
 conf t
  router ospfv3 1
@@ -36,6 +37,7 @@ interface GigabitEthernet 0/2
  ospfv3 1 ipv6 area 0
 exit
 !
+
 R5
 conf t
  router ospfv3 1
