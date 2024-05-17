@@ -12,7 +12,7 @@ config t
 exit
 !
 interface GigabitEthernet 0/1
- no shut
+ no shutdown
 exit
 !
 interface GigabitEthernet 0/1.2
