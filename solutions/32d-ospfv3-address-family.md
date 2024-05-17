@@ -1,6 +1,5 @@
 ### OSPFv3 Address Families Configuration Lab Solution
 ```
-!
 R3
 conf t
  router ospfv3 1
