@@ -1,24 +1,35 @@
-◀️ [Parent directory](../) 
+### OSPFv3 Traditional Configuration Lab Solution
 
-#️⃣ [lab configs](./rfilter.yaml)
+```
+R5
+!
+show ip route
 
-In this lab, take a look at how to filter routes coming in from another area and this topology already has OSPF and EIGRP configured as shown in the diagram.
+R4
+!
+config t
+ ip prefix-list NO-AREA1-NETS seq 10 deny 192.0.2.0/30
+ ip prefix-list NO-AREA1-NETS seq 20 deny 198.51.100.0/30
+ ip prefix-list NO-AREA1-NETS seq 30 permit 0.0.0.0/0 le 32
+!
+router ospfv3 1
+ address-family ipv4 unicast
+  area 0 filter-list prefix NO-AREA1-NETS in
+ exit-address-family
+end
+!
 
-Connect to R5 and do a show ip route.  Notice that we see two inter-area routes being learned from area 1.
-192.0.2.0 and 198.51.100.0
+```
 
-Your goal for this lab is to filter these two interarea routes that are being learned from OSPF Area 1.  That filtering will be done on the area border router (ABR), which in this topology will be R4.  Perform that filtering using a prefix list and we want to apply that prefix list so that we filter advertisements going into area zero.
+#### Verification Commands
+Final check:
 
----
+From R5, verify that the two inter-area routes, from before are now being filtered with the installed prefix-list
 
-### OSPF Route Filtering Lab
+```
+R5
+show ip route
+!
+```
 
-![Lab topology](https://github.com/tech-zero/assets/blob/main/images/rfilter.png)
-
-### Lab Tasks:
-- Filter out two inter-area routes learned from OSPF Area 1
-- Setup prefix list on ABR (R4)
-
----
-
-:white_check_mark: [CLI reference](https://github.com/tech-zero/assets/blob/main/solutions/32b-ospf-rfilter.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/32-ospf/3-ospfv3-traditional/README.md)
