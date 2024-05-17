@@ -42,7 +42,7 @@ R5
 conf t
  router ospfv3 1
   router-id 5.5.5.5
-  address-family ipv4
+   address-family ipv4
    address-family ipv6
   exit address-family
 !
