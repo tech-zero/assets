@@ -49,4 +49,4 @@ show spanning-tree summary
 
 ---
 
-▶️ [Next lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/Udemy/2-pvst+/README.md)
+▶️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/Udemy/2-pvst+/README.md)
