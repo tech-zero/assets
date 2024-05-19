@@ -68,4 +68,4 @@ show ospfv3 database
 !
 ```
 
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/32-ospf/4-ospfv3-address-family/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/_ospf/ospf4/README.md)
