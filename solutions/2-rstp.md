@@ -1,4 +1,4 @@
-### VRF Lab Solution:
+### Rapid PVST+ Lab Solution:
 
 ```
 SW1
