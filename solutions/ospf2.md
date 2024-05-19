@@ -35,4 +35,4 @@ show ip route
 !
 ```
 
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/32-ospf/2-route-filter/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/ospf2/README.md)
