@@ -10,6 +10,10 @@ neighbor 198.51.100.6 remote-as 65004
 network 10.1.1.0 mask 255.255.255.0
 end
 !
+```
+
+```
+!
 show ip bgp
 ping 5.5.5.5
 !
