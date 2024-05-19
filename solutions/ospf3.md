@@ -73,4 +73,4 @@ From the output of show ipv6 ospf database, verify the OSPF link state advertise
 
 ```
 
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/32-ospf/3-ospfv3-traditional/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/_ospf/ospf3/README.md)
