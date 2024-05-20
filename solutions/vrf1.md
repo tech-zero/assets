@@ -58,4 +58,4 @@ show ip route vrf TENANT-C
 !
 ```
 
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_vrf/lab1/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_vir/lab1/README.md)
