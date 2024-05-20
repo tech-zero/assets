@@ -49,4 +49,4 @@ show spanning-tree summary
 
 ---
 
-▶️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer2/pvst1/README.md)
+▶️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/labs/infr/_l2/lab1/README.md)
