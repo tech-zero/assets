@@ -9,6 +9,6 @@ Complete the configuration tasks in the following table:
 
 ![pt5-tasks1.png](/images/pt5-tasks1.png)
 
-✅[CLI Solution](/solutions/day2lab1-5.md)
+✅ [CLI Solution](/solutions/day2lab1-5.md)
 
 ◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
