@@ -11,7 +11,7 @@ to the HSRP address, which is enabled in Part 4.
 
 ---
 Complete the configuration tasks listed in the table.
-![Part3 tasks](https://github.com/tech-zero/assets/blob/main/images/pt3-tasks1.png)
+![Part3 tasks](/images/pt3-tasks1.png)
 
 ✅[CLI Solution](/solutions/day2lab1-3.md)
 
