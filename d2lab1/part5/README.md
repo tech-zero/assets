@@ -7,7 +7,7 @@ and 1813. Create a user called 31days with the password 31dayspass.
 
 Complete the configuration tasks in the following table:
 
-![pt5-tasks1.png](/images/pt5-tasks2.png)
+![pt5-tasks2.png](/images/pt5-tasks2.png)
 
 ✅ [CLI Solution](/solutions/day2lab1-5.md)
 
