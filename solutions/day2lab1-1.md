@@ -1,4 +1,5 @@
-### Day 2 Lab 1 Part 1 Solution:
+### Day 2 Lab 1 Solution:
+### Part 1 Commands
 #### Router EDGE
 ```
 hostname EDGE
@@ -28,8 +29,6 @@ interface g0/2
  no shutdown
  exit
 ```
-
-
 #### Router ISP
 ```
 hostname ISP
@@ -53,7 +52,6 @@ interface Loopback 0
  no shutdown
  exit
 ```
-
 #### Router HQ
 ```
 hostname HQ
@@ -77,8 +75,6 @@ interface g0/2
  no shutdown
  exit
 ```
-
-
 #### Switch DIST1
 ```
 hostname DIST1
@@ -140,8 +136,6 @@ ip dhcp pool VLAN-102
  default-router 172.16.102.254
  exit
 ```
-
-
 #### Switch DIST2
 ```
 hostname DIST2
@@ -203,8 +197,6 @@ ip dhcp pool VLAN-102
  default-router 172.16.102.254
  exit
 ```
-
-
 #### Switch ASW1
 ```
 hostname ASW1
@@ -233,5 +225,4 @@ interface vlan 100
  no shutdown
  exit
 ```
-
 [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
