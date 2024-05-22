@@ -1,7 +1,7 @@
-### BGP for IPv6 Lab Solution
+### BGP Lab 2 Solution
+#### Configure BGP for IPv6 networks
+#### R3
 ```
-R3
-!
 conf t
  route-map IPV6-NEXT-HOP
   set ipv6 next-hop 2000:2::1
@@ -18,10 +18,9 @@ router bgp 65001
   neighbor 198.51.100.6 route-map IPV6-NEXT-HOP out
   exit-address-family
 end
-!
-
-ISP
-!
+```
+#### ISP
+```
 conf t
  route-map IPV6-NEXT-HOP
   set ipv6 next-hop 2000:2::2
@@ -38,19 +37,13 @@ router bgp 65004
   neighbor 198.51.100.5 route-map IPV6-NEXT-HOP out
   exit-address-family
 end
-!
 ```
-
 #### Verification Commands
+#### ISP
 ```
-ISP
-!
 show ip route
 show ipv6 route
 show bgp
 show bgp ipv6 unicast
-!
-
 ```
-
 ◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/bgp/bgp2/README.md)
