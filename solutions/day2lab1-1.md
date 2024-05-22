@@ -234,4 +234,4 @@ interface vlan 100
  exit
 ```
 
-Back to lab
+[Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
