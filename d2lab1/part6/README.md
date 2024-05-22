@@ -8,6 +8,7 @@ You need to set up the following management services on PC1 for this part of the
 
 Complete the configuration tasks listed in the followin table:
 
+![pt6-tasks1.png](/images/pt6-tasks1.png)
 
 
 ✅ [CLI Solution](/solutions/day2lab1-6.md)
