@@ -6,7 +6,7 @@ interface from DIST1 and DIST2 should be successful.
 
 ---
 ### Note
-Pings fromthe hosts will not be successful because their default gateways are pointing  
+Pings from the hosts will not be successful because their default gateways are pointing  
 to the HSRP address, which is enabled in Part 4.
 
 ---
