@@ -6,6 +6,7 @@ key should be configured with 31daysRADIUS, and the server should use UDP ports 
 and 1813. Create a user called 31days with the password 31dayspass.  
 
 Complete the configuration tasks in the following table:
+
 ![pt5-tasks1.png](/images/pt5-tasks1.png)
 
 ✅[CLI Solution](/solutions/day2lab1-1.md)
