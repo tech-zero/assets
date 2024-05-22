@@ -1,15 +1,12 @@
 ### Day 2 Lab 1 
-### Part 1: Build the Network and Configure Basic Device Settings and Interface Addressing
-In Part 1, you set up the network topology and configure basic settings and interface addressing.  
-Follow these steps:  
+#### Part 5: Configure Secure Access
+In this part you configure various security mechanisms on the devices in the topology.  
+You need to set up a AAA RADIUS server on PC4 for this part of the lab. The shared secret  
+key should be configured with 31daysRADIUS, and the server should use UDP ports 1812  
+and 1813. Create a user called 31days with the password 31dayspass.  
 
- **Step 1.** Build the network, as shown in the topology in address table.  
-   Attach the devices as shown in the topology diagram and connect them as necessary.
-
-**Step 2.** Configure the basic settings for each device:  
-   **a.** Console into each device, enter global configuration mode, and apply the basic settings.  
-   **b.** Save the running configuration to startup-config on all devices.  
-   **c.** Configure PC1 and PC4 host addressing as shown in the addressing table.  Assign the default gateway address 172.16.100.254, which will be the HSRPv2 virtual IP address used in Part 4.
+Complete the configuration tasks in the following table:
+![pt5-tasks1.png](/images/pt5-tasks1.png)
 
 ✅[CLI Solution](/solutions/day2lab1-1.md)
 
