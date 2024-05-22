@@ -11,4 +11,4 @@ Follow these steps:
    **b.** Save the running configuration to startup-config on all devices.  
    **c.** Configure PC1 and PC4 host addressing as shown in the addressing table.  Assign the default gateway address 172.16.100.254, which will be the HSRPv2 virtual IP address used in Part 4.
 
-![Solution]((https://github.com/tech-zero/assets/blob/main/solutions/day2lab1-1.md))
+![Solution]((../solutions/day2lab1-1.md))
