@@ -1,16 +1,15 @@
 ### Day 2 Lab 1 
-### Part 1: Build the Network and Configure Basic Device Settings and Interface Addressing
-In Part 1, you set up the network topology and configure basic settings and interface addressing.  
-Follow these steps:  
+### Part 6: Configure Network Management Features
+In this part, you configure various network management features.  
+You need to set up the following management services on PC1 for this part of the lab:  
++ PC1 should have a syslog server running to receive messages from the HQ network devices.
++ PC1 should be configured to run an SNMP trap receiver. Use the community string 31DAYS.
++ PC1 should have a NetFlow Version 9 collector running on port 9999 to received data exported from the EDGE router.  
 
- **Step 1.** Build the network, as shown in the topology in address table.  
-   Attach the devices as shown in the topology diagram and connect them as necessary.
+Complete the configuration tasks listed in the followin table:
 
-**Step 2.** Configure the basic settings for each device:  
-   **a.** Console into each device, enter global configuration mode, and apply the basic settings.  
-   **b.** Save the running configuration to startup-config on all devices.  
-   **c.** Configure PC1 and PC4 host addressing as shown in the addressing table.  Assign the default gateway address 172.16.100.254, which will be the HSRPv2 virtual IP address used in Part 4.
 
-✅[CLI Solution](/solutions/day2lab1-1.md)
+
+✅ [CLI Solution](/solutions/day2lab1-6.md)
 
 ◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
