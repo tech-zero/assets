@@ -4,7 +4,7 @@ In this part of the review lab, you complete the Layer 2 network configuration a
 At the end of this part, all the switches should be able to communicate. PC2 and PC3 should receive addressing  
 from DHCP and SLAAC.
 
-![Lab topology](https://github.com/tech-zero/assets/blob/main/images/pt2-tasks1.png)
+![Lab topology](/images/pt2-tasks1.png)
 
 ✅[CLI Solution](/solutions/day2lab1-1.md)
 
