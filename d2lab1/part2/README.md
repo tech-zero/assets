@@ -1,15 +1,10 @@
 ### Day 2 Lab 1 
-### Part 1: Build the Network and Configure Basic Device Settings and Interface Addressing
-In Part 1, you set up the network topology and configure basic settings and interface addressing.  
-Follow these steps:  
+### Part 2: Configure the Layer 2 Network and Host Support
+In this part of the review lab, you complete the Layer 2 network configuration and set up basic host support.  
+At the end of this part, all the switches should be able to communicate. PC2 and PC3 should receive addressing  
+from DHCP and SLAAC.
 
- **Step 1.** Build the network, as shown in the topology in address table.  
-   Attach the devices as shown in the topology diagram and connect them as necessary.
-
-**Step 2.** Configure the basic settings for each device:  
-   **a.** Console into each device, enter global configuration mode, and apply the basic settings.  
-   **b.** Save the running configuration to startup-config on all devices.  
-   **c.** Configure PC1 and PC4 host addressing as shown in the addressing table.  Assign the default gateway address 172.16.100.254, which will be the HSRPv2 virtual IP address used in Part 4.
+![Lab topology](https://github.com/tech-zero/assets/blob/main/images/pt2-tasks1.png)
 
 ✅[CLI Solution](/solutions/day2lab1-1.md)
 
