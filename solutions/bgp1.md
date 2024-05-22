@@ -1,7 +1,6 @@
-### Solution
+### BGP Lab 1 Solution
+#### R3 BGP configuration
 ```
-R3
-!
 router bgp 65001
 bgp router-id 3.3.3.3
 neighbor 10.1.1.2 remote-as 65001
@@ -11,12 +10,11 @@ network 10.1.1.0 mask 255.255.255.0
 end
 !
 ```
-
+#### Verification Commands
 ```
 !
 show ip bgp
 ping 5.5.5.5
 !
 ```
-
 ◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/bgp/bgp1/README.md)
