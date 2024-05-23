@@ -17,7 +17,7 @@ interface range g1/0-1
 spanning-tree mode rapid-pvst
 spanning-tree vlan 100,102 root primary
 spanning-tree vlan 101 root secondary
-interface g1/0/23
+interface g0/0
  switchport mode access
  switchport access vlan 100
  spanning-tree portfast
