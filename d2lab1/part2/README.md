@@ -6,6 +6,6 @@ from DHCP and SLAAC.
 
 ![Lab topology](/images/pt2-tasks1.png)
 
-✅ [CLI Solution](/solutions/day2lab1-1.md)
+✅ [CLI Solution](/solutions/day2lab1-2.md)
 
 ◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
