@@ -8,4 +8,4 @@ from DHCP and SLAAC.
 
 ✅ [CLI Solution](/solutions/day2lab1-2.md)
 
-◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
+◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/31dayrev/lab1/README.md)
