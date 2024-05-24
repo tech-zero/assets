@@ -100,4 +100,4 @@ ip access-list standard SNMP-NMS
  snmp-server enable traps ospf
 end
 ```
-◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
+◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/31dayrev/lab1/README.md)
