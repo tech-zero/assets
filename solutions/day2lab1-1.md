@@ -225,4 +225,4 @@ interface vlan 100
  no shutdown
  exit
 ```
-◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/_ciscopress/lab1/README.md)
+◀️ [Back to lab](https://github.com/tech-zero/ccnp-encor/blob/main/labs/31dayrev/lab1/README.md)
