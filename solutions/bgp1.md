@@ -17,4 +17,4 @@ show ip bgp
 ping 5.5.5.5
 !
 ```
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/bgp/bgp1/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/bgp/lab1/README.md)
