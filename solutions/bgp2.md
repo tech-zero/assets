@@ -46,4 +46,4 @@ show ipv6 route
 show bgp
 show bgp ipv6 unicast
 ```
-◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/3-infrastructure/_layer3/bgp/bgp2/README.md)
+◀️ [Back to labs](https://github.com/tech-zero/ccnp-encor/blob/main/labs/bgp/lab2/README.md)
