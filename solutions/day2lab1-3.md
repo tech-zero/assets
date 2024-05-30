@@ -1,7 +1,8 @@
 ### Day 2 Lab 1 Solution:
 ### Part 3 Commands (Routing Protocols)
 #### Router EDGE
-```router ospf 4
+```
+router ospf 4
  router-id 0.0.4.1
  network 172.16.11.0 0.0.0.255 area 0
  network 172.16.13.0 0.0.0.255 area 0
