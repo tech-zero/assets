@@ -7,14 +7,12 @@ interface range g2/0-3
  switchport mode trunk
  switchport trunk native vlan 999
  channel-group 12 mode active
- no shutdown
  exit
 interface range g1/0-1
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport trunk native vlan 999
  channel-group 1 mode active
- no shutdown
  exit
 spanning-tree mode rapid-pvst
 spanning-tree vlan 100,102 root primary
@@ -23,7 +21,6 @@ interface g0/0
  switchport mode access
  switchport access vlan 100
  spanning-tree portfast
- no shutdown
  exit
 end
 ```
@@ -34,14 +31,12 @@ interface range g2/0-3
  switchport mode trunk
  switchport trunk native vlan 999
  channel-group 12 mode active
- no shutdown
  exit
 interface range g1/2-3
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport trunk native vlan 999
  channel-group 2 mode active
- no shutdown
  exit
 !
 spanning-tree mode rapid-pvst
@@ -52,7 +47,6 @@ interface g0/0
  switchport mode access
  switchport access vlan 102
  spanning-tree portfast
- no shutdown
  exit
 end
 ```
@@ -64,26 +58,22 @@ interface range g1/0-1
  switchport mode trunk
  switchport trunk native vlan 999
  channel-group 1 mode active
- no shutdown
  exit
 interface range g1/2-3
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport trunk native vlan 999
  channel-group 2 mode active
- no shutdown
  exit
 interface g3/2
  switchport mode access
  switchport access vlan 100
  spanning-tree portfast
- no shutdown
  exit
 interface g3/3
  switchport mode access
  switchport access vlan 101
  spanning-tree portfast
- no shutdown
  exit
 end
 ```
