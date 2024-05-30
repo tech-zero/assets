@@ -13,10 +13,10 @@ router ospfv3 6
  address-family ipv6 unicast
   default-information originate
  exit
-interface g0/0/1
+interface g0/1
  ospfv3 6 ipv6 area 0
  exit
-interface g0/0/2
+interface g0/2
  ospfv3 6 ipv6 area 0
  exit
 !
@@ -69,10 +69,10 @@ router ospf 4
 router ospfv3 6
  router-id 0.0.6.2
  exit
-interface g0/0/1
+interface g0/1
  ospfv3 6 ipv6 area 0
  exit
-interface g0/0/2
+interface g0/2
  ospfv3 6 ipv6 area 0
  exit
 end
@@ -86,14 +86,14 @@ router ospf 4
  network 172.16.102.0 0.0.0.255 area 0
  network 172.16.11.0 0.0.0.255 area 0
  passive-interface default
- no passive-interface g1/0/11
+ no passive-interface g0/1
  exit
 router ospfv3 6
  router-id 0.0.6.3
  passive-interface default
- no passive-interface g1/0/11
+ no passive-interface g0/1
  exit
-interface g1/0/11
+interface g0/1
  ospfv3 6 ipv6 area 0
  exit
 interface vlan 100
@@ -116,14 +116,14 @@ router ospf 4
  network 172.16.102.0 0.0.0.255 area 0
  network 172.16.10.0 0.0.0.255 area 0
  passive-interface default
- no passive-interface g1/0/11
+ no passive-interface g0/1
  exit
 router ospfv3 6
  router-id 0.0.6.4
  passive-interface default
- no passive-interface g1/0/11
+ no passive-interface g0/1
  exit
-interface g1/0/11
+interface g0/1
  ospfv3 6 ipv6 area 0
  exit
 interface vlan 100
