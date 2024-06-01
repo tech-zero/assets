@@ -13,10 +13,10 @@ router ospfv3 6
  address-family ipv6 unicast
   default-information originate
  exit
-interface g0/1
+interface g0/0/1
  ospfv3 6 ipv6 area 0
  exit
-interface g0/2
+interface g0/0/2
  ospfv3 6 ipv6 area 0
  exit
 !
